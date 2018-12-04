@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="placeholder_news_type">news type</string>
+    <string name="placeholder_news_text">This is a very good news for all people around the world about peace and friendship!</string>
+    <string name="placeholder_news_time">2018-12-01 07:00:15</string>
+    <string name="author_placeholder">Author placeholder</string>
+    <string name="i_m_alone_here">I\'m alone here!</string>
+    <string name="no_network_connection">Please connect to Internet by Wifi or Mobile data!</string>
+    <string name="no_internet_connection">Can\'t access to the Guardianapis.com website. Please check the Internet connection!</string>
+</resources>
