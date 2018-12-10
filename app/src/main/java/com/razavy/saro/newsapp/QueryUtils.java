@@ -34,7 +34,7 @@ class QueryUtils {
         final String NEWS_TEXT = "webTitle";
         final String NEWS_URL = "webUrl";
         final String NEWS_REFERENCES = "references";
-        final String NEWS_AUTHOR = "author";
+        final String AUTHOR_ID = "id";
         String newsText = "", newsTypeName = "", newsTypeId = "", newsDate = "", newsUrl = "", newsAuthor = "";
 
         List<NewsItem> newsItems = new ArrayList<>();
@@ -65,8 +65,8 @@ class QueryUtils {
                 JSONArray references = newsItem.optJSONArray(NEWS_REFERENCES);
                 if (references.length() > 0)
                     for (int j = 0; j < references.length(); j++) {
-                        JSONObject newsAuthorObject = references.getJSONObject(i);
-                        newsAuthor = newsAuthorObject.optString(NEWS_AUTHOR);
+                        JSONObject newsAuthorObject = references.optJSONObject(j);
+                        newsAuthor = newsAuthorObject.optString(AUTHOR_ID);
                     }
                 newsItems.add(new NewsItem(newsText, newsTypeName, newsTypeId, newsUrl, newsAuthor, newsDate));
             }

@@ -5,4 +5,5 @@
     <dimen name="sp_sixteen">16sp</dimen>
     <dimen name="dp_zero">0dp</dimen>
     <dimen name="dp_list_item_height">104dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
